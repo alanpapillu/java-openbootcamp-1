@@ -1,4 +1,5 @@
-public class ejercicio {
+package com.ejemplo;
+public class Ejercicio {
 
     public static void main(String[] args) {
 
