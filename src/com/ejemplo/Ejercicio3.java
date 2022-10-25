@@ -10,9 +10,8 @@ public class Ejercicio3 {
         
         String[] nombres = {"Juan" , "Pepe" , "Maria"};
 
-        for (String nombre : nombres){
-            System.out.println("Los nombres son: " + nombres[0] + ", " + nombres[1] + " y " + nombres[2]);
-            break;
+        for (int i = 0; i < nombres.length; i++){
+            System.out.println(nombres[i]);
             }
     }
 
