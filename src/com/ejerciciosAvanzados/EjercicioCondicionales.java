@@ -1,5 +1,7 @@
 package com.ejerciciosAvanzados;
 
+import java.util.Scanner;
+
 /* Una pequeña despensa desea calcular el sueldo de sus empleados. Los puestos de los mismos pueden tener
  * tres categorias: repositor, cajero y supervisor.
  * 
@@ -14,19 +16,28 @@ package com.ejerciciosAvanzados;
 public class EjercicioCondicionales {
 
     public static void main(String[] args) {
+
+        double sueldo = 0;
         
-        Repositor repositor = new Repositor("Juan Gomez", "repositor", 15890, 1.1);
+        System.out.println("Ingrese la categoría del empleado");
 
-        repositor.calcularSueldo();
+        Scanner teclado = new Scanner(System.in);
+        int categoria = teclado.nextInt();
 
-        Cajero cajero = new Cajero("Juana Perez", "cajero", 25630.89);
+        if (categoria == 1){
+            sueldo = 15890 * 1.1;
+        } else if (categoria == 2){
+            sueldo = 25630.89;
+        } else if(categoria == 3) {
+            sueldo = 35560.20 * 0.89;
+        } else {
+            System.out.println("El número de categoría es incorrecto");
+        }
 
-        cajero.calcularSueldo();
-
-        Supervisor supervisor = new Supervisor("Pedro Ruiz", "supervisor", 35560.20);
-
-        supervisor.calcularSueldo();
-
+        if(categoria == 1 || categoria == 2 || categoria == 3){
+            System.out.println("El número de categoría es " + categoria);
+            System.out.println("El sueldo es de " + sueldo);
+        } 
 
 
     }

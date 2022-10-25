@@ -15,4 +15,14 @@ public class SmartPhone extends SmartDevice {
         this.camara = camara;
     }
 
+    @Override
+    public String toString() {
+        return "modelo=" + modelo +
+                ", marca=" + marca +
+                ", bateria=" + bateria +
+                ", valor=" + valor +
+                ", memoria=" + memoria +
+                "camara=" + camara;
+    }
+
 }
