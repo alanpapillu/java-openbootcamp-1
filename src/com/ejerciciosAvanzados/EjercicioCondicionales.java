@@ -12,5 +12,23 @@ package com.ejerciciosAvanzados;
  */
 
 public class EjercicioCondicionales {
+
+    public static void main(String[] args) {
+        
+        Repositor repositor = new Repositor("Juan Gomez", "repositor", 15890, 1.1);
+
+        repositor.calcularSueldo();
+
+        Cajero cajero = new Cajero("Juana Perez", "cajero", 25630.89);
+
+        cajero.calcularSueldo();
+
+        Supervisor supervisor = new Supervisor("Pedro Ruiz", "supervisor", 35560.20);
+
+        supervisor.calcularSueldo();
+
+
+
+    }
     
 }
