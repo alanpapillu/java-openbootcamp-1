@@ -14,4 +14,10 @@ public class SmartWatch extends SmartDevice {
         this.tamaño = tamaño;
     }
 
+    @Override
+    public String toString() {
+        return "SmartWatch [modelo=" + modelo + ", marca=" + marca + ", bateria=" + bateria + ", valor=" + valor + ", color=" + color + ", tamaño=" + tamaño + "]";
+    }
+
+    
 }

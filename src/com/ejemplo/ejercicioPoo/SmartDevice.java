@@ -17,6 +17,13 @@ public abstract class SmartDevice {
     public SmartDevice(){
 
     }
+
+    @Override
+    public String toString() {
+        return "SmartDevice [modelo=" + modelo + ", marca=" + marca + ", bateria=" + bateria + ", valor=" + valor + "]";
+    }
+
+    
     
     
 }

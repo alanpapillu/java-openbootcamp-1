@@ -39,7 +39,7 @@ public class EjercicioCondicionales {
             System.out.println("El sueldo es de " + sueldo);
         } 
 
-
+        teclado.close();
     }
     
 }

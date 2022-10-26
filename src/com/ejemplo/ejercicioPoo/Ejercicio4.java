@@ -15,8 +15,8 @@ public class Ejercicio4 {
 
         SmartWatch smartMotorola = new SmartWatch("G58X", "Motorola", "2 celdas", 900, "Negro", "2 pulgadas");
 
-        System.out.println(smartSamsung.modelo);
-        System.out.println(smartMotorola.valor);
+        System.out.println(smartSamsung);
+        System.out.println(smartMotorola);
     }
 
 }
